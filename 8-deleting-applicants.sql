@@ -3,3 +3,8 @@
 
 -- Write DELETE query to remove all the applicants, who applied with emails for this domain. (e-mail address has this domain after the @ sign)
 -- After the DELETE, write a COUNT SELECT query to check the result: search for all applicants with this e-mail domain.
+
+DELETE FROM applicants
+WHERE email LIKE '%mauriseu.net';
+SELECT COUNT(*) FROM applicants
+WHERE email LIKE '%mauriseu.net';

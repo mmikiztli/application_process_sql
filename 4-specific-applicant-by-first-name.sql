@@ -5,3 +5,11 @@
 -- instead of having her name in 2 different columns. This columns should be called: full_name
 --
 -- columns: full_name, phone_number
+
+SELECT (first_name ||' '|| last_name) AS full_name, phone_number from applicants
+WHERE first_name = 'Carol'
+
+---ALTER TABLE applicants ADD full_name text;
+---UPDATE applicants set full_name = (first_name ||' '|| last_name);
+---SELECT full_name, phone_number from applicants
+---WHERE first_name = 'Carol'

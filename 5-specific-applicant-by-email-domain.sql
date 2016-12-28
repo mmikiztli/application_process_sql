@@ -3,3 +3,6 @@
 -- The only thing you know about her is her school e-mail address ending: '@adipiscingenimmi.edu'
 --
 -- columns: first_name, last_name, phone_number
+
+SELECT (first_name ||' '|| last_name) AS full_name, phone_number from applicants
+WHERE email LIKE '%@adipiscingenimmi.edu'
